@@ -144,9 +144,8 @@ h4 {
 
 /* секция hero */
 .hero {
-  margin-bottom: 94px;
-  padding-left: 452px;
-  padding-right: 452px;
+  /* padding-left: 452px;
+  padding-right: 452px; */
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -193,16 +192,17 @@ h4 {
 }
 
 /* секция особенности */
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-}
-
-.features {
-  margin-bottom: 94px;
 }
 
 .features-list {
@@ -219,13 +219,16 @@ h4 {
 }
 
 /*секция Чем мы занимаемся */
-.services-list {
-  display: flex;
-  flex-wrap: wrap;
+.services {
+  padding-bottom: 94px;
 }
 
 .services h2 {
   margin-bottom: 50px;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .services-list .item {
@@ -234,14 +237,6 @@ h4 {
 
 .services-list .item:not(:nth-child(3n)) {
   margin-right: 30px;
-}
-
-.services {
-  margin-bottom: 94px;
-}
-
-.services .img {
-  display: block;
 }
 
 .titlecolor {
@@ -334,14 +329,24 @@ h4 {
 }
 
 .header {
-  margin-bottom: 94px;
-}
-
-.line {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* лист кнопок */
+.list-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.list-button .item:not(:last-child) {
+  margin-right: 30px;
+}
 .portfolio-button {
   min-width: 73px;
   padding-top: 6px;
@@ -351,11 +356,10 @@ h4 {
   border-radius: 4px;
   border: 0px;
 
+  color: var(--second-txt-color);
+
   font-family: inherit;
   font-style: inherit;
-}
-
-.portfolio-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -370,10 +374,35 @@ h4 {
   color: var(--hero-text-color);
 }
 
+/* сетка */
+.list-img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-right: -15px;
+  margin-bottom: -15px;
+  margin-left: -15px;
+
+  /* background-color: var(--hero-text-color); */
+}
+
+.list-img .item {
+  width: 370px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.list-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
 .list-img .title {
-  margin-bottom: 4px;
-  margin-right: 24px;
-  margin-left: 24px;
+  /* margin-bottom: 4px; */
 
   color: var(--second-txt-color);
 
@@ -385,9 +414,7 @@ h4 {
 
 .list-img .text {
   margin-top: 0px;
-  margin-bottom: 20px;
-  margin-right: 24px;
-  margin-left: 24px;
+  margin-bottom: 0px;
 
   color: var(--main-txt-color);
 
@@ -397,48 +424,9 @@ h4 {
   letter-spacing: 0.03em;
 }
 
-.portfolio-title:hover,
-.portfolio-title:focus,
-.portfolio-link:hover,
-.portfolio-link:focus {
+.list-img .title:hover,
+.list-img .title:focus,
+.list-img .text:hover,
+.list-img .text:focus {
   color: var(--accent);
-}
-
-.list-button {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.list-button .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-/* сетка */
-.list-img {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -15px;
-  margin-right: -15px;
-  margin-bottom: -15px;
-  margin-left: -15px;
-
-  background-color: var(--hero-text-color);
-}
-
-.list-img .item {
-  width: 370px;
-  margin-top: 15px;
-  margin-right: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-}
-
-.link-img {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.section-portfolio {
-  margin-bottom: 94px;
 }

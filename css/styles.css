@@ -375,6 +375,12 @@ h4 {
 }
 
 /* сетка */
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list-img {
   display: flex;
   flex-wrap: wrap;
@@ -382,8 +388,6 @@ h4 {
   margin-right: -15px;
   margin-bottom: -15px;
   margin-left: -15px;
-
-  /* background-color: var(--hero-text-color); */
 }
 
 .list-img .item {
@@ -399,11 +403,13 @@ h4 {
   padding-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px;
+
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .list-img .title {
-  /* margin-bottom: 4px; */
-
   color: var(--second-txt-color);
 
   font-weight: 700;
